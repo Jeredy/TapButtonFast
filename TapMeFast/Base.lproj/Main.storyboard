@@ -1,24 +1,96 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Background" translatesAutoresizingMaskIntoConstraints="NO" id="cQZ-KH-N0e">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tap Me Fast" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2PQ-bM-upq">
+                                <rect key="frame" x="16" y="47" width="343" height="218"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="2PQ-bM-upq" secondAttribute="height" multiplier="343:218" id="xjF-ch-r3J"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="68"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Udc-XI-JNK">
+                                <rect key="frame" x="16" y="560" width="343" height="218"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26961686652199945" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="68"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SK6-5U-u58"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="10" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIg-dS-8dD">
+                                <rect key="frame" x="16" y="321" width="343" height="83.666666666666686"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26961686652199945" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="59"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZNd-FG-ok2">
+                                <rect key="frame" x="16" y="413.66666666666669" width="343" height="83.333333333333314"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.26961686652199945" colorSpace="custom" customColorSpace="displayP3"/>
+                                <fontDescription key="fontDescription" name="Copperplate" family="Copperplate" pointSize="59"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </label>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jIg-dS-8dD" firstAttribute="top" secondItem="2PQ-bM-upq" secondAttribute="bottom" constant="56" id="2qw-Qp-WJk"/>
+                            <constraint firstItem="cQZ-KH-N0e" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="9zN-BQ-EP2"/>
+                            <constraint firstItem="cQZ-KH-N0e" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="BN7-SG-u23"/>
+                            <constraint firstItem="Udc-XI-JNK" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="Ehu-Ay-UEu"/>
+                            <constraint firstItem="2PQ-bM-upq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="Guw-PL-Yos"/>
+                            <constraint firstItem="ZNd-FG-ok2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="JSm-kY-gxo"/>
+                            <constraint firstItem="ZNd-FG-ok2" firstAttribute="height" secondItem="jIg-dS-8dD" secondAttribute="height" id="KL6-9i-GpV"/>
+                            <constraint firstItem="ZNd-FG-ok2" firstAttribute="top" secondItem="jIg-dS-8dD" secondAttribute="bottom" constant="9" id="Mam-4t-nTn"/>
+                            <constraint firstItem="cQZ-KH-N0e" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="OgT-Rf-8so"/>
+                            <constraint firstItem="Udc-XI-JNK" firstAttribute="top" secondItem="ZNd-FG-ok2" secondAttribute="bottom" constant="63" id="Ph3-o8-ehT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2PQ-bM-upq" secondAttribute="trailing" constant="16" id="UAD-LH-O1W"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="ZNd-FG-ok2" secondAttribute="trailing" constant="16" id="UQb-oh-x0e"/>
+                            <constraint firstItem="2PQ-bM-upq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ad7-hT-34l"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Udc-XI-JNK" secondAttribute="trailing" constant="16" id="awP-BV-aTN"/>
+                            <constraint firstAttribute="bottom" secondItem="cQZ-KH-N0e" secondAttribute="bottom" id="c6M-Sl-Qh5"/>
+                            <constraint firstItem="jIg-dS-8dD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="cYE-B2-poS"/>
+                            <constraint firstItem="Udc-XI-JNK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="ptq-j4-v6J"/>
+                            <constraint firstItem="Udc-XI-JNK" firstAttribute="height" secondItem="2PQ-bM-upq" secondAttribute="height" id="rRL-1t-hiI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jIg-dS-8dD" secondAttribute="trailing" constant="16" id="rVl-d7-wox"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="ZNd-FG-ok2" id="Sqm-TX-NpR"/>
+                        <outlet property="startButton" destination="Udc-XI-JNK" id="ezD-e7-JeC"/>
+                        <outlet property="timeLabel" destination="jIg-dS-8dD" id="1gk-kH-6QH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="56.799999999999997" y="-2.2167487684729066"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Background" width="1920" height="1080"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
 </document>

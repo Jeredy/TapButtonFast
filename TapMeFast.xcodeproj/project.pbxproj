@@ -17,6 +17,9 @@
 		CE62BBB028E5BF9C004352B1 /* TapMeFastTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62BBAF28E5BF9C004352B1 /* TapMeFastTests.m */; };
 		CE62BBBA28E5BF9C004352B1 /* TapMeFastUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62BBB928E5BF9C004352B1 /* TapMeFastUITests.m */; };
 		CE62BBBC28E5BF9C004352B1 /* TapMeFastUITestsLaunchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CE62BBBB28E5BF9C004352B1 /* TapMeFastUITestsLaunchTests.m */; };
+		CEE8183528E642310036C875 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CEE8183428E642310036C875 /* PORKYS_.TTF */; };
+		CEE8183628E642310036C875 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CEE8183428E642310036C875 /* PORKYS_.TTF */; };
+		CEE8183728E642310036C875 /* PORKYS_.TTF in Resources */ = {isa = PBXBuildFile; fileRef = CEE8183428E642310036C875 /* PORKYS_.TTF */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,6 +57,7 @@
 		CE62BBB528E5BF9C004352B1 /* TapMeFastUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TapMeFastUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CE62BBB928E5BF9C004352B1 /* TapMeFastUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapMeFastUITests.m; sourceTree = "<group>"; };
 		CE62BBBB28E5BF9C004352B1 /* TapMeFastUITestsLaunchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TapMeFastUITestsLaunchTests.m; sourceTree = "<group>"; };
+		CEE8183428E642310036C875 /* PORKYS_.TTF */ = {isa = PBXFileReference; lastKnownFileType = file; path = PORKYS_.TTF; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +119,7 @@
 				CE62BBA128E5BF9C004352B1 /* LaunchScreen.storyboard */,
 				CE62BBA428E5BF9C004352B1 /* Info.plist */,
 				CE62BBA528E5BF9C004352B1 /* main.m */,
+				CEE8183428E642310036C875 /* PORKYS_.TTF */,
 			);
 			path = TapMeFast;
 			sourceTree = "<group>";
@@ -241,6 +246,7 @@
 			files = (
 				CE62BBA328E5BF9C004352B1 /* LaunchScreen.storyboard in Resources */,
 				CE62BBA028E5BF9C004352B1 /* Assets.xcassets in Resources */,
+				CEE8183528E642310036C875 /* PORKYS_.TTF in Resources */,
 				CE62BB9E28E5BF92004352B1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -249,6 +255,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE8183628E642310036C875 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -256,6 +263,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CEE8183728E642310036C875 /* PORKYS_.TTF in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -448,6 +456,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -475,6 +484,7 @@
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarStyle = UIStatusBarStyleLightContent;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
